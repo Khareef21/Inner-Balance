@@ -1,0 +1,24 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#2fb89c">
+    <circle cx="32" cy="26" r="8"/>
+    <circle cx="52" cy="18" r="10"/>
+    <circle cx="74" cy="24" r="12"/>
+    <circle cx="96" cy="38" r="8"/>
+    <circle cx="22" cy="50" r="10"/>
+    <circle cx="46" cy="52" r="14"/>
+    <circle cx="69" cy="48" r="11"/>
+    <circle cx="88" cy="58" r="9"/>
+    <circle cx="32" cy="78" r="9"/>
+    <circle cx="55" cy="78" r="13"/>
+    <circle cx="78" cy="88" r="11"/>
+    <circle cx="91" cy="76" r="7"/>
+    <circle cx="43" cy="34" r="6"/>
+    <circle cx="60" cy="30" r="6"/>
+    <circle cx="84" cy="48" r="6"/>
+    <circle cx="25" cy="92" r="6"/>
+    <circle cx="68" cy="98" r="8"/>
+    <path d="M28 32 C 18 54, 22 86, 46 90" stroke="#2fb89c" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M60 16 C 74 38, 98 46, 95 70" stroke="#2fb89c" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M20 60 C 34 74, 58 96, 80 88" stroke="#2fb89c" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

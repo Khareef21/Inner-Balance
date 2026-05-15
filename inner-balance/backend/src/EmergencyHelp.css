@@ -1,0 +1,335 @@
+.emergency-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md);
+  animation: fadeIn 0.3s ease;
+}
+
+.emergency-modal {
+  background: white;
+  border-radius: var(--radius-lg);
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.4s ease;
+}
+
+.emergency-header {
+  background: var(--gradient-primary);
+  color: white;
+  padding: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  position: relative;
+}
+
+.emergency-icon {
+  font-size: 2rem;
+  animation: pulse 2s infinite;
+}
+
+.emergency-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.emergency-close {
+  position: absolute;
+  right: var(--spacing-lg);
+  top: var(--spacing-lg);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.emergency-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.emergency-content {
+  padding: var(--spacing-xl);
+}
+
+.emergency-warning {
+  background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+  border: 2px solid #d63031;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+.warning-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.emergency-warning p {
+  margin: var(--spacing-md) 0;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.emergency-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--spacing-lg);
+}
+
+.emergency-call-btn {
+  background: #d63031;
+  color: white;
+  border: none;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(214, 48, 49, 0.4);
+  transition: all 0.3s ease;
+  animation: glow 2s infinite;
+}
+
+.emergency-call-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(214, 48, 49, 0.6);
+}
+
+.country-selector {
+  margin-bottom: var(--spacing-xl);
+}
+
+.country-selector label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.country-selector select {
+  width: 100%;
+  padding: var(--spacing-md);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  background: white;
+}
+
+.emergency-contacts h3 {
+  color: var(--primary);
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.3rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  background: rgba(102, 126, 234, 0.05);
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  background: rgba(102, 126, 234, 0.1);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.contact-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h4 {
+  margin: 0 0 var(--spacing-xs) 0;
+  color: var(--dark);
+  font-size: 1.1rem;
+}
+
+.contact-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.contact-actions {
+  flex-shrink: 0;
+}
+
+.contact-btn {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border: none;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.call-btn {
+  background: var(--success);
+  color: white;
+}
+
+.call-btn:hover {
+  background: #00b894;
+  transform: translateY(-1px);
+}
+
+.text-btn {
+  background: var(--primary);
+  color: white;
+}
+
+.text-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.calming-resources {
+  margin-top: var(--spacing-xl);
+}
+
+.calming-resources h3 {
+  color: var(--primary);
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.3rem;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.resource-card {
+  background: rgba(5, 215, 255, 0.05);
+  border: 1px solid rgba(5, 215, 255, 0.2);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.resource-card:hover {
+  background: rgba(5, 215, 255, 0.1);
+  border-color: var(--success);
+  transform: translateY(-2px);
+}
+
+.resource-card h4 {
+  margin: 0 0 var(--spacing-sm) 0;
+  color: var(--dark);
+  font-size: 1.1rem;
+}
+
+.resource-card p {
+  margin: 0 0 var(--spacing-lg) 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.resource-btn {
+  background: var(--success);
+  color: white;
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resource-btn:hover {
+  background: #00b894;
+  transform: translateY(-1px);
+}
+
+.emergency-footer {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.disclaimer {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: var(--spacing-lg);
+}
+
+.support-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.heart {
+  animation: float 3s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .emergency-modal {
+    margin: var(--spacing-md);
+    max-height: calc(100vh - 2 * var(--spacing-md));
+  }
+
+  .emergency-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .emergency-call-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contact-card {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-md);
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+}

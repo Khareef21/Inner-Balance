@@ -1,2 +1,3 @@
-# Inner-Balance
-Inner Balance  is an online mental health assistance platform for college and university students. The app incorporates the use of an AI chatbot, wellness games, yoga/meditation, a therapist directory, and community support to assist students to better deal with their stress and overall emotional wellness.
+#  Inner Balance
+
+**Inner Balance** is a modern AI-powered mental wellness platform designed specifically for college and university students. It combines intelligent conversational support, mood analytics, self-assessment tools, guided wellness activities, therapist discovery, and anonymous peer communities into a secure, scalable, and user-centric web application. The platform aims to promote emotional well-being, encourage early intervention, and make mental health support accessible anytime, anywhere.
